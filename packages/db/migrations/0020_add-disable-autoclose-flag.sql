@@ -1,0 +1,1 @@
+ALTER TABLE "arb_position_pairs" ADD COLUMN "disable_autoclose" boolean DEFAULT false NOT NULL;

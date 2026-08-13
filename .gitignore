@@ -1,0 +1,22 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.key
+*.keystore
+*.dump
+*.sql.gz
+dist/
+*.log
+.DS_Store
+.cursor/
+.claude/
+CLAUDE.md
+AGENTS.md
+
+# Ad-hoc experiment / sandbox scripts that may contain hardcoded secrets
+scripts/sandbox/
+scripts/funding-rate-range.ts

@@ -1,0 +1,1 @@
+ALTER TABLE "arb_position_pairs" ALTER COLUMN "risk_params" SET DEFAULT '{"liqProximity":"normal","funding":"normal","oiCascade":"normal","equityDrawdown":"normal"}'::jsonb;

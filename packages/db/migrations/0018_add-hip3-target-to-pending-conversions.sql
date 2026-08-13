@@ -1,0 +1,2 @@
+ALTER TABLE "pending_hl_conversions" ADD COLUMN "target_venue" text DEFAULT 'main' NOT NULL;--> statement-breakpoint
+ALTER TABLE "pending_hl_conversions" ADD COLUMN "target_collateral" text DEFAULT 'USDC' NOT NULL;

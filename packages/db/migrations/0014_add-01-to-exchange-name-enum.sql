@@ -1,0 +1,1 @@
+ALTER TYPE "public"."exchange_name" ADD VALUE '01';

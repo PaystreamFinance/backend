@@ -1,0 +1,28 @@
+{
+  "name": "paystream",
+  "private": true,
+  "workspaces": ["packages/*", "api", "core-worker"],
+  "scripts": {
+    "dev": "cd api && bun --watch run main.ts",
+    "worker": "cd core-worker && bun run main.ts",
+    "db:generate": "bun run --filter '@paystream/db' generate",
+    "db:migrate": "bun run --filter '@paystream/db' migrate",
+    "db:push": "bun run --filter '@paystream/db' push",
+    "db:studio": "bun run --filter '@paystream/db' studio",
+    "typecheck": "bun x tsc --noEmit -p packages/alerts/tsconfig.json && bun x tsc --noEmit -p packages/db/tsconfig.json && bun x tsc --noEmit -p packages/perps/tsconfig.json && bun x tsc --noEmit -p api/tsconfig.json && bun x tsc --noEmit -p core-worker/tsconfig.json"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "1.14.4",
+    "ioredis": "5.9.3",
+    "protobufjs": "7.6.5",
+    "ws": "8.21.3"
+  },
+  "overrides": {
+    "@grpc/grpc-js": "1.14.4",
+    "esbuild": "0.28.2",
+    "protobufjs": "7.6.5",
+    "uuid": "11.1.1",
+    "valibot": "1.4.2",
+    "ws": "8.21.3"
+  }
+}

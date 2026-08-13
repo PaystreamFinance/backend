@@ -1,0 +1,2 @@
+ALTER TABLE "arb_position_pairs" ADD COLUMN "disable_aclp" boolean DEFAULT false NOT NULL;--> statement-breakpoint
+ALTER TABLE "arb_position_pairs" ADD COLUMN "surviving_leg_sl_set" boolean DEFAULT false NOT NULL;

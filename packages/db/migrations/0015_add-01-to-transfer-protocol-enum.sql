@@ -1,0 +1,1 @@
+ALTER TYPE "public"."transfer_protocol" ADD VALUE '01';

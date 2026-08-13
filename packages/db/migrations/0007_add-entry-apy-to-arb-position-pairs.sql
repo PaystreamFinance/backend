@@ -1,0 +1,1 @@
+ALTER TABLE "arb_position_pairs" ADD COLUMN "entry_apy" double precision;

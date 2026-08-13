@@ -1,0 +1,53 @@
+{
+  "name": "@paystream/perps",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.ts",
+    "./logger": "./logger.ts",
+    "./constants": "./constants.ts",
+    "./types": "./types.ts",
+    "./registry": "./registry.ts",
+    "./market-data": "./market-data.ts",
+    "./providers/pacifica-provider": "./providers/pacifica-provider.ts",
+    "./providers/hyperliquid-provider": "./providers/hyperliquid-provider.ts",
+    "./providers/aster-provider": "./providers/aster-provider.ts",
+    "./providers/lighter-provider": "./providers/lighter-provider.ts",
+    "./clients/hyperliquid-client": "./clients/hyperliquid-client.ts",
+    "./clients/aster-client": "./clients/aster-client.ts",
+    "./clients/lighter-client": "./clients/lighter-client.ts",
+    "./clients/zo-client": "./clients/zo-client.ts",
+    "./clients/zo-codec": "./clients/zo-codec.ts",
+    "./providers/zo-provider": "./providers/zo-provider.ts",
+    "./providers/phoenix-provider": "./providers/phoenix-provider.ts",
+    "./clients/phoenix-client": "./clients/phoenix-client.ts",
+    "./providers/hip3-hyperliquid-provider": "./providers/hip3-hyperliquid-provider.ts",
+    "./hip3/dex-config": "./hip3/dex-config.ts",
+    "./hip3/spot-swap": "./hip3/spot-swap.ts",
+    "./lighter/signer": "./lighter/signer.ts",
+    "./lighter/ffi-worker": "./lighter/ffi-worker.ts",
+    "./funding-rates/types": "./funding-rates/types.ts",
+    "./funding-rates/utils": "./funding-rates/utils.ts",
+    "./funding-rates/fetchers/hyperliquid": "./funding-rates/fetchers/hyperliquid.ts",
+    "./funding-rates/fetchers/pacifica": "./funding-rates/fetchers/pacifica.ts",
+    "./funding-rates/fetchers/aster": "./funding-rates/fetchers/aster.ts",
+    "./funding-rates/fetchers/lighter": "./funding-rates/fetchers/lighter.ts",
+    "./funding-rates/fetchers/zo": "./funding-rates/fetchers/zo.ts",
+    "./funding-rates/fetchers/phoenix": "./funding-rates/fetchers/phoenix.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.2"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "0.29.0",
+    "@ellipsis-labs/rise": "^0.4.9",
+    "@nktkas/hyperliquid": "^0.30.3",
+    "@solana/web3.js": "^1.98.4",
+    "bn.js": "^5.2.2",
+    "bs58": "^5.0.0",
+    "protobufjs": "^7.6.5",
+    "tweetnacl": "^1.0.3",
+    "viem": "^2.45.1"
+  }
+}

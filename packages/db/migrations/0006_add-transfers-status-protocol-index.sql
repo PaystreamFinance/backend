@@ -1,0 +1,1 @@
+CREATE INDEX "transfers_status_protocol_idx" ON "transfers" USING btree ("status","protocol");

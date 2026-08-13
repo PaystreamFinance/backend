@@ -1,0 +1,1 @@
+ALTER TYPE "public"."arb_close_reason" ADD VALUE 'liquidation_partial';
