@@ -70,7 +70,7 @@ export async function getOrCreateAsterApiCredentials(
 
   // 8. Create API key
   const { apiKey, apiSecret } = await createAsterApiKey(apiKeySig, solanaWalletAddress, loginResult.sessionToken)
-  log.info(`[aster-auth] Created API key: ${apiKey.slice(0, 8)}...`)
+  log.info('[aster-auth] Created API key')
 
   // 9. Persist to DB
   await db.insert(exchangeApiKeys)

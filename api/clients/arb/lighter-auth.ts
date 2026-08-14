@@ -98,7 +98,7 @@ export async function getOrCreateLighterApiCredentials(
 
   // 3b. Generate API key pair
   const apiKey = await generateAPIKey()
-  log.info(`[lighter-auth] Generated API key: ${apiKey.publicKey.slice(0, 16)}...`)
+  log.info('[lighter-auth] Generated API key')
 
   // 3c. Create signer client (registers key in Go library)
   await createClient(LIGHTER_BASE_URL, apiKey.privateKey, LIGHTER_CHAIN_ID, API_KEY_INDEX, accountIndex)
