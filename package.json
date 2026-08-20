@@ -13,14 +13,14 @@
   },
   "dependencies": {
     "@grpc/grpc-js": "1.14.4",
-    "ioredis": "5.9.3",
-    "protobufjs": "7.6.5",
+    "ioredis": "6.0.0",
+    "protobufjs": "8.7.2",
     "ws": "8.21.3"
   },
   "overrides": {
     "@grpc/grpc-js": "1.14.4",
     "esbuild": "0.28.2",
-    "protobufjs": "7.6.5",
+    "protobufjs": "8.7.2",
     "uuid": "11.1.1",
     "valibot": "1.4.2",
     "ws": "8.21.3"
